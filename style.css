@@ -1,25 +1,150 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up the body style */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 50px;
+    font-family: 'Arial', sans-serif;
+    background: url('images/two-black-casseroles.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: auto;
 }
 
+/* Container for the main content */
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: white;
-    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    overflow: auto;
 }
 
-#recipe {
-    margin-top: 20px;
+/* Header styling */
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #333;
 }
 
-#recipe img {
+/* Main content styling */
+main {
+    margin-bottom: 2rem;
+}
+
+/* Recipe details styling */
+#recipe-details {
+    text-align: left;
+}
+
+#recipe-details h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#recipe-details img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Time and servings styling */
+.time-servings {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.time-servings p {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.time-servings p span {
+    margin-left: 0.5rem;
+}
+
+.time-servings p svg {
+    width: 20px;
+    height: 20px;
+    fill: #333;
+}
+
+#recipe-details ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+#recipe-details div {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    background: #e67e22;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    border: none;
     border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #d35400;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.875rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    footer {
+        font-size: 0.75rem;
+    }
 }

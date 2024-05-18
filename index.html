@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Recipe</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1 data-lang-en="Random Recipe" data-lang-ar="وصفة عشوائية">Random Recipe</h1>
-        <button onclick="getRandomRecipe()" data-lang-en="Get Random Recipe" data-lang-ar="احصل على وصفة عشوائية">Get Random Recipe</button>
+        <header>
+            <h1>What Should I Cook Today?</h1>
+        </header>
+        <main>
+            <button class="btn" onclick="getRandomRecipe()">Get Recipe</button>
+            <div id="error"></div>
+        </main>
+        <footer>
+            <p>Welcome to Recipe Finder, your go-to source for daily culinary inspiration. Explore delicious recipes and transform your cooking experience today!</p>
+        </footer>
     </div>
     <script src="script.js"></script>
 </body>
